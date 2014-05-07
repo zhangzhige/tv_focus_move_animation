@@ -49,7 +49,7 @@ public class FocusMoveManager {
 
 	private static final float DEFINE_MARGIN = 40 * Constant.DENSITY;// 左右的margin值，当当前的focusView的left或者right值大于这个值得时候我们就需要滑动
 
-	private static final int ANIMATION_DURATION = 2000;
+	private static final int ANIMATION_DURATION = 200;
 
 	private Drawable mMySelectedDrawable = null;
 
@@ -118,6 +118,7 @@ public class FocusMoveManager {
 				break;
 			case KeyEvent.KEYCODE_DPAD_DOWN:// 向下事件
 				nextView = mCurrentFocusSonView.focusSearch(View.FOCUS_DOWN);
+				log.debug("nextView="+nextView+",id="+mCurrentFocusSonView.getNextFocusDownId());
 				if(nextView==null || nextView.getParent() != mParent){
 					nextView = mParent.focusSearch(View.FOCUS_DOWN);
 				}
