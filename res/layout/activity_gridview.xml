@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.tvfocusmoveanimationdemo.widget.FocusGridView
+        android:id="@+id/layout_live_play"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="6"
+        android:paddingLeft="38dip"
+        android:paddingRight="38dip"
+        android:paddingTop="20dip"
+        android:paddingBottom="20dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:overScrollMode="never" 
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>
